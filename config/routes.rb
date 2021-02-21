@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get  '/help', to: 'static_pages#help'
   get  '/about', to: 'static_pages#about'
   get  '/roll', to: 'static_pages#roll'
+  resources :movies
 end
 
 

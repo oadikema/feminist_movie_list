@@ -1,0 +1,13 @@
+<% provide(:title, 'Movies') %>
+
+<h1>Movie List</h1>
+
+<ul>
+
+<% @movies.each do | movie | %>
+
+<li><%= movie.name %></li>
+
+<% end %>
+
+</ul>
