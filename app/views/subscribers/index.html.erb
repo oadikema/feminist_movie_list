@@ -1,7 +1,9 @@
+<% provide(:title, "Subscribe") %>
 <% if cookies[:saved_subscriber] %>
   Thanks for signing up!
 <% else %>
   <h1>Signup for our newsletter here! </h1>
+  <p>We send out links to trailers for upcoming movies created by women and movie reviews that include feminist theory. Join in on the fun and get an update from us every month!</p>
   <h3>We currently have <%= Subscriber.count %> subscribers. </h3>
   <%= form_for @subscriber do |f|  %>
     <%= f.text_field :name, placeholder: "Name" %>
